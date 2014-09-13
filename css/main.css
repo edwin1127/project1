@@ -10,22 +10,26 @@ body {
 	text-align: center;
 }
 div{
-	color: hotpink;
+	color: cyan;
 
 }
 	
 	
 	
-	padding: 30px;
+	
 
 }
 .container{
+   margin-right: 32px;
+}
 	
 }
 
 .row{
 	
 }
+
+
 
 .list-group-item {
 	
@@ -37,6 +41,184 @@ div{
 	width: 250px;
 	
 }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+#primary-nav {
+  position: absolute;
+  top: 0;
+  right: -14rem;
+  z-index: 10;
+  box-sizing: border-box;
+  width: 14rem;
+  height: 4000px;
+  height: 100vh;
+  background: white;
+  border-left: 1px solid #aaa;
+  font-size: 1rem;
+}
+@media screen and (min-width: 75rem) {
+  #primary-nav {
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: auto;
+    padding: 0;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+    text-align: right;
+    letter-spacing: 0.2em;
+  }
+  #primary-nav::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+  }
+}
+#primary-nav a {
+  text-decoration: none;
+  color: #aaa;
+}
+#primary-nav .menu-item {
+  display: block;
+  padding: 1rem;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: box-shadow 0.3s, background 0.3s;
+}
+@media screen and (max-width: 75rem -0.05rem) {
+  #primary-nav .menu-item:hover {
+    background: #fbf6fb;
+  }
+}
+@media screen and (min-width: 75rem) {
+  #primary-nav .menu-item {
+    display: inline-block;
+    padding: 0 0.5rem;
+    border: none;
+  }
+}
+#primary-nav .hamburger {
+  position: absolute;
+  top: 20px;
+  left: -42px;
+}
+@media screen and (min-width: 75rem) {
+  #primary-nav .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 74.95rem) {
+  input.nav-toggle:checked + #primary-nav {
+    right: 0;
+    box-shadow: 5px 0 20px 0px rgba(0, 0, 0, 0.5), 0 0 0 4000px rgba(255, 255, 255, 0.95);
+    transition: right 0.3s, box-shadow 0.6s;
+  }
+  input.nav-toggle:checked + #primary-nav .hamburger::before, input.nav-toggle:checked + #primary-nav .hamburger::after {
+    transition: box-shadow 0.2s, transform 0.5s 0.2s;
+  }
+  input.nav-toggle:checked + #primary-nav .hamburger::before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  input.nav-toggle:checked + #primary-nav .hamburger::after {
+    transform: rotate(-45deg) translate(5px, -5px);
+    box-shadow: 0 -8.5px 0 0 transparent;
+  }
+}
+
+input[type="checkbox"].nav-toggle {
+  display: none;
+}
+
+.hamburger {
+  position: relative;
+  display: block;
+  height: 17px;
+  width: 19px;
+  background: transparent;
+  cursor: pointer;
+}
+.hamburger::before, .hamburger::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 5px;
+  background: #c3c3c3;
+  transition: box-shadow 0.2s 0.2s, transform 0.3s;
+}
+.hamburger::after {
+  top: auto;
+  bottom: 0;
+  box-shadow: 0 -7px 0 0 #c3c3c3;
+}
+
+.expand {
+  position: absolute;
+  bottom: -1.8em;
+  right: 0;
+  font-size: 0.8em;
+  color: #f6f6f6;
+  cursor: pointer;
+}
+.expand::before {
+  content: '+ expand';
+  display: inline;
+}
+
+.open > .expand::before {
+  content: 'x collapse';
+  display: inline;
+}
+
+.btn {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+/*----------------*/
+header {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 4rem;
+  padding: 0 2rem;
+  line-height: 4rem;
+  border-bottom: 1px solid #aaa;
+}
+header .logo {
+  position: relative;
+  height: 100%;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  color: #aaa;
+  text-decoration: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+
+
+
+
 
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 body {
@@ -72,7 +254,7 @@ body {
   transition: all 0.5s ease-out;
 }
 .button:hover {
-  color: #333;
+  color: #00FFFF;
   background: #eeffff;
   -moz-transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
@@ -191,165 +373,6 @@ a {
 *
 */
 
-* {
-    margin: 0;
-    padding: 0;
-  	-moz-box-sizing: border-box;
-		-o-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-
-	body {
-		width: 100%;
-		height: 100%;
-		font-family: "helvetica neue", helvetica, arial, sans-serif;
-		font-size: 13px;
-		text-align: center;
-		background: #333 url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/low_contrast_linen.png');
-	}
-
-	ul {
-		margin: 30px auto;
-		text-align: center;
-	}
-
-	li {
-		list-style: none;
-		position: relative;
-		display: inline-block;
-		width: 100px;
-		height: 100px;
-	}
-
-	@-moz-keyframes rotate {
-		0% {transform: rotate(0deg);}
-		100% {transform: rotate(-360deg);}
-	}
-
-	@-webkit-keyframes rotate {
-		0% {transform: rotate(0deg);}
-		100% {transform: rotate(-360deg);}
-	}
-
-	@-o-keyframes rotate {
-		0% {transform: rotate(0deg);}
-		100% {transform: rotate(-360deg);}
-	}
-
-	@keyframes rotate {
-		0% {transform: rotate(0deg);}
-		100% {transform: rotate(-360deg);}
-	}
-
-	.round {
-		display: block;
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		padding-top: 30px;		
-		text-decoration: none;		
-		text-align: center;
-		font-size: 25px;		
-		text-shadow: 0 1px 0 rgba(255,255,255,.7);
-		letter-spacing: -.065em;
-		font-family: "Hammersmith One", sans-serif;		
-		-webkit-transition: all .25s ease-in-out;
-		-o-transition: all .25s ease-in-out;
-		-moz-transition: all .25s ease-in-out;
-		transition: all .25s ease-in-out;
-		box-shadow: 2px 2px 7px rgba(0,0,0,.2);
-		border-radius: 300px;
-		z-index: 1;
-		border-width: 4px;
-		border-style: solid;
-	}
-
-	.round:hover {
-		width: 130%;
-		height: 130%;
-		left: -15%;
-		top: -15%;
-		font-size: 33px;
-		padding-top: 38px;
-		-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
-		-o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
-		-moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
-		box-shadow: 5px 5px 10px rgba(0,0,0,.3);
-		z-index: 2;
-		border-size: 10px;
-		-webkit-transform: rotate(-360deg);
-		-moz-transform: rotate(-360deg);
-		-o-transform: rotate(-360deg);
-		transform: rotate(-360deg);
-	}
-
-	a.red {
-		background-color: rgba(239,57,50,1);
-		color: rgba(133,32,28,1);
-		border-color: rgba(133,32,28,.2);
-	}
-
-	a.red:hover {
-		color: rgba(239,57,50,1);
-	}
-
-	a.green {
-		background-color: rgba(1,151,171,1);
-		color: rgba(0,63,71,1);
-		border-color: rgba(0,63,71,.2);
-	}
-
-	a.green:hover {
-		color: rgba(1,151,171,1);
-	}
-
-	a.yellow {
-		background-color: rgba(252,227,1,1);
-		color: rgba(153,38,0,1);
-		border-color: rgba(153,38,0,.2);
-	}
-
-	a.yellow:hover {
-		color: rgba(252,227,1,1);
-	}
-
-	.round span.round {
-		display: block;
-		opacity: 0;
-		-webkit-transition: all .5s ease-in-out;
-		-moz-transition: all .5s ease-in-out;
-		-o-transition: all .5s ease-in-out;
-		transition: all .5s ease-in-out;
-		font-size: 1px;
-		border: none;
-		padding: 40% 20% 0 20%;
-		color: #fff;
-	}
-
-	.round span:hover {
-		opacity: .85;
-		font-size: 16px;
-		-webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
-		-moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
-		-o-text-shadow: 0 1px 1px rgba(0,0,0,.5);
-		text-shadow: 0 1px 1px rgba(0,0,0,.5);	
-	}
-
-	.green span {
-		background: rgba(0,63,71,.7);		
-	}
-
-	.red span {
-		background: rgba(133,32,28,.7);		
-	}
-
-	.yellow span {
-		background: rgba(161,145,0,.7);	
-
-	}
 
 /* Start of Sparkles 
  *
