@@ -6,13 +6,14 @@ html, body{
 body {
 	text-align: center;
   overflow-x: hidden;
+  bottom: 3220px;
 
 }
 .about-me{
 	text-align: center;
 }
 div{
-	color: cyan;
+	color: black;
 
 }
 	
@@ -22,7 +23,7 @@ div{
 
 }
 .container{
-   margin-right: 32px;
+   
 }
 	
 }
@@ -64,7 +65,7 @@ body {
   background-size: cover;
 }
 .wrapper .para.two {
-  background-image: url(http://www.maketotaldesign.com/img/bg-3.jpg);
+  background-image: url(http://wallpaper-download.net/wallpapers/flower-wallpapers-cherry-blossom-background-wallpaper-33968.jpg);
 }
 .wrapper .para.three {
   background-image: url(http://www.maketotaldesign.com/img/bg-5.jpg);
@@ -78,8 +79,16 @@ body {
 
 
 
+
+
+
+
+
+
+
 /* Start of Sparkles 
  *
  *
  *
  */
+ 
