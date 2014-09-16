@@ -5,3 +5,6 @@ $(window).scroll(function() {
     $('body').css('background-position', 'center ' + parseInt(x/r) + 'px'); // Switch x polarity to reverse direction
 });
 
+
+
+
