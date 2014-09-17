@@ -284,8 +284,16 @@ body {
   background-image: url(http://www.maketotaldesign.com/img/bg-6.jpg);
 }
 
+.content {
+	color: white;
+	background-color: black
+
+}
 
 
+.ul{
+	margin-right: 10px;
+}
 
 
 
