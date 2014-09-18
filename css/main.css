@@ -261,8 +261,8 @@ body {
 }
 .wrapper .content {
   padding: 2em 2em;
-  border-top: 2px solid #666;
-  border-bottom: 2px solid #666;
+  border-top: 4px solid #666;
+  border-bottom: 4px solid #666;
 }
 .wrapper .para {
   height: 650px;
@@ -276,7 +276,7 @@ body {
 }
 .wrapper .para.two {
   background-image: url(http://wallpaper-download.net/wallpapers/flower-wallpapers-cherry-blossom-background-wallpaper-33968.jpg);
-}
+}\\\
 .wrapper .para.three {
   background-image: url(http://www.maketotaldesign.com/img/bg-5.jpg);
 }
@@ -284,9 +284,7 @@ body {
   background-image: url(http://www.maketotaldesign.com/img/bg-6.jpg);
 }
 
-.content {
-	color: white;
-	background-color: black
+.para.one{
 
 }
 
@@ -294,6 +292,39 @@ body {
 .ul{
 	margin-right: 10px;
 }
+
+
+div.transbox p {
+    margin: 30px 40px;
+    font-weight: bold;
+    color: #000000;
+}
+
+div.transbox p {
+    margin: 30px 40px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+
+div.transbox {
+    width: 600px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 30px 40px;
+    font-weight: bold;
+    color: #000000;
+}/
 
 
 
