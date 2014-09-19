@@ -265,7 +265,7 @@ body {
   border-bottom: 4px solid #666;
 }
 .wrapper .para {
-  height: 659px;
+  height: 700px;
   background: url(http://www.maketotaldesign.com/img/bg-2.jpg) no-repeat center center fixed;
   border-top: 0.6px solid #d5d5d5;
   border-bottom: 0.6px solid #d5d5d5;
@@ -293,9 +293,10 @@ body {
 
 *////////////////////////////////////////////////////////////////////////////////////////////////////
 
-.div{
+
+body {
   background: lightblue no-repeat center center fixed;
-  webki-t-background-size:cover;
+  -webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
@@ -313,7 +314,7 @@ body {
   right: 50%;
   margin-right: -175px;
   background-color: rgba(110,110,110,.3);
-  opacity: .60;
+  opacity: .9;
   border: 1px solid black;
   filter: alpha(opacity=90); /*for IE8 and ealier*/ 
   border-radius: 10px; 
@@ -333,10 +334,41 @@ body {
 
 
 
-
 /* Start of Sparkles 
  *
  *
  *
  */
+
+ #container{
+ 	width: 960px;
+ 	margin: 0px auto;
+ }
+
+ #left-column{
+ 	width: 700px;
+ 	float: left;
+ 	background:blue;
+ }
+
+ #right-column{
+ 	width: 260px;
+ 	float: left;
+ 	background:orange;
+ }
+
+ @media screen and (max-width: 959px){
+ 	#container{
+ 		width: 100%
+ 	}
+ 	#left-column{
+ 		width: 70%
+ 	}
+ 	#right-column{
+ 		width: 30%
+ 	}
+ 	img{
+ 		width: 100%
+ 	}
+ }
  
