@@ -263,6 +263,16 @@ nav[role="custom-dropdown"] ul > li:hover > a {
     font: bold 1.4em sans-serif;
   }
 }
+@media(max-width: 320px){
+	h1{
+		text-align: center;
+	}
+	header{
+		border:5px solid;
+		text-decoration: underline;
+	}
+}
+
 
 
 
@@ -273,7 +283,7 @@ div.background {
     width: 500px;
     height: 250px;
     background: url(klematis.jpg) repeat;
-   
+    border: 2px solid black;
     margin-left: auto;
     margin-right: auto;
 
