@@ -273,9 +273,10 @@ div.background {
     width: 500px;
     height: 250px;
     background: url(klematis.jpg) repeat;
-    border: 2px solid black;
+   
     margin-left: auto;
     margin-right: auto;
+
 }
 
 div.transbox {
@@ -286,12 +287,12 @@ div.transbox {
     border: 1px solid black;
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
+    margin-top: 50%;
 }
 
 div.transbox p {
     margin: 30px 40px;
     font-weight: bold;
     color: #000000;
-    margin-bottom: 50%;
 }
 
