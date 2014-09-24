@@ -43,7 +43,6 @@ div{
 *
 */
 
-
 *////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -239,123 +238,6 @@ nav[role="custom-dropdown"] ul > li:hover > a {
 
 
 
-div.background {
-    width: 500px;
-    height: 250px;
-    background: url(klematis.jpg) repeat;
-    border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
 
-}
 
-div.transbox {
-    width: 400px;
-    height: 180px;
-    margin: 30px 50px;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
-    margin-top: 50%;
-}
-
-div.transbox p {
-    margin: 30px 40px;
-    font-weight: bold;
-    color: #000000;
-}
-
-body { margin: 0; background: #333; }
-header { 
-  padding: .5vw;
-  font-size: 0;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  -webkit-flex-flow: row wrap; 
-  flex-flow: row wrap; 
-  display: -webkit-box;
-  display: flex;
-}
-header div { 
-  -webkit-box-flex: auto;
-  -ms-flex: auto;
-  flex: auto; 
-  width: 200px; 
-  margin: .5vw; 
-}
-header div img { 
-  width: 100%; 
-  height: auto; 
-}
-@media screen and (max-width: 400px) {
-  header div { margin: 0; }
-  header { padding: 0; }
-  
-}
-
-@import url("http://fonts.googleapis.com/css?family=Lato");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font: 14px/1 Lato, sans-serif;
-  color: #555;
-  background: #eee;
-}
-
-.gallery {
-  width: 790px;
-  margin: 0 auto;
-  padding: 5px;
-  background: #333;
-}
-
-.gallery > div {
-  position: relative;
-  float: left;
-  padding: 5px;
-}
-
-.gallery > div > img {
-  width: 250px;
-  transition: .1s transform;
-  transform: translateZ(0);
-  /* hack */
-}
-
-.gallery > div:hover {
-  z-index: 1;
-}
-
-.gallery > div:hover > img {
-  transform: scale(1.5, 1.5);
-  transition: .3s transform;
-}
-
-.cf:before, .cf:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-
-.cf:after {
-  clear: both;
-}
-
-h1 {
-  margin: 40px 0;
-  font-size: 24px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-footer {
-  margin: 80px 0;
-  text-align: center;
-}
 
