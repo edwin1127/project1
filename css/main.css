@@ -37,6 +37,8 @@ div{
 
 
 
+
+
 /* Start of Paralaz
 *
 *
@@ -294,6 +296,13 @@ h3 {
 }
 
 
+
+
+
+
+
+
+
 @import url('http://fonts.googleapis.com/css?family=Lato:300,700');
 * {
   margin: 0;
@@ -337,7 +346,7 @@ article h1 {
   font-size: 3em;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 p {
   line-height: 200%;
@@ -381,9 +390,6 @@ a.nice-link:hover {
 a.nice-link:hover:after {
   width: 100%;
 }
-
-
-
 
 
 
