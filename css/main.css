@@ -316,7 +316,7 @@ html {
 article {
   font-size: 1.3em;
   min-height: 700px;
-  padding: 20% 20px;
+  padding: 10% 10px;
   font-weight: 200;
   text-align: center;
   background-color: white;
@@ -390,6 +390,9 @@ a.nice-link:hover {
 a.nice-link:hover:after {
   width: 100%;
 }
+
+
+
 
 
 
