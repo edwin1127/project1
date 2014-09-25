@@ -233,6 +233,11 @@ nav[role="custom-dropdown"] ul > li:hover > a {
 }
 
 
+
+
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -287,5 +292,107 @@ h3 {
     width: 33.33333333%;
   }
 }
+
+
+@import url('http://fonts.googleapis.com/css?family=Lato:300,700');
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  color: #2C2C2C;
+  font: 300 100% 'Lato', sans-serif;
+}
+article {
+  font-size: 1.3em;
+  min-height: 700px;
+  padding: 20% 20px;
+  font-weight: 200;
+  text-align: center;
+  background-color: white;
+}
+.colorful article:nth-of-type(1) {
+  background-color: #A8DA5E;
+}
+.colorful article:nth-of-type(2) {
+  background-color: #FFF581;
+}
+.colorful article:nth-of-type(3) {
+  background-color: #2AEEE6;
+}
+.colorful article:nth-of-type(4) {
+  background-color: #313131;
+  color: #3FC9C3;
+}
+.colorful article article:nth-of-type(5) {
+  background-color: white;
+}
+article > div {
+  display: inline-block;
+  text-align: left;
+  max-width: 60%;
+}
+article h1 {
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+p {
+  line-height: 200%;
+  max-width: 50%;
+  text-align: left;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*___________________________________ LINK ___________________________________ */
+a.nice-link {
+  position: relative;
+  color: #0092ca;
+}
+h1 a.nice-link:after {
+  border-bottom: 1px solid #00d0f3;
+}
+a.nice-link:after {
+  text-align: justify;
+  display: inline-block;
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #00d0f3;
+  min-height: 100%;
+  width: 0;
+  max-width: 100%;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+a.nice-link:hover {
+  color: #0092ca;
+}
+a.nice-link:hover:after {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
