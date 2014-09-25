@@ -159,7 +159,7 @@ nav[role="custom-dropdown"] ul {
 nav[role="custom-dropdown"] ul > li {
   float: left;
   padding: .55em .55em;
-  width: 19%;
+  width: 20%;
   background-image: url(https://raw.github.com/TimPietrusky/mantisbt-is-a-rockstar/master/rockstar/img/bg_dark_grey.png);
   text-align: center;
   transition-duration: .3s;
@@ -291,7 +291,13 @@ h3 {
 
 @media (min-width: 800px) {
   a {
-    width: 33.33333333%;
+    width: 33.3333%;
+  }
+
+  a.links {
+  	a{
+  		width: 80%
+  	}
   }
 }
 
