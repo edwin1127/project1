@@ -396,6 +396,34 @@ a.nice-link:hover:after {
 }
 
 
+html, body {
+  height: 100%;
+  margin: -10px 0 0 0;
+  color: black; 
+}
+
+a:hover {
+  color: #A99FA1;
+}
+
+
+
+section h1 {
+  padding-top: 17%;
+  font-family: 'Vollkorn', serif;
+  font-size: 48px;
+}
+
+
+section p {
+  width: 500px;
+  margin: 30px auto 32px;
+  font-family: 'Muli', sans-serif;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+
 
 
 
